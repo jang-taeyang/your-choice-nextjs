@@ -17,13 +17,25 @@ const TopMenu = () => (
     <div className="container d-flex justify-content-between align-items-center">
       <StussyLogo />
       <div className="d-flex gap-4" style={{ marginRight: '-55px' }}>
-        <button type="button" style={{ fontSize: '1.5rem', color: 'black', background: 'none', border: 'none' }}>
+        <button
+          type="button"
+          aria-label="Search"
+          style={{ fontSize: '1.5rem', color: 'black', background: 'none', border: 'none' }}
+        >
           <i className="fas fa-search" />
         </button>
-        <button type="button" style={{ fontSize: '1.5rem', color: 'black', background: 'none', border: 'none' }}>
+        <button
+          type="button"
+          aria-label="Shopping Bag"
+          style={{ fontSize: '1.5rem', color: 'black', background: 'none', border: 'none' }}
+        >
           <i className="fas fa-shopping-bag" />
         </button>
-        <button type="button" style={{ fontSize: '1.5rem', color: 'black', background: 'none', border: 'none' }}>
+        <button
+          type="button"
+          aria-label="Menu"
+          style={{ fontSize: '1.5rem', color: 'black', background: 'none', border: 'none' }}
+        >
           <i className="fas fa-bars" />
         </button>
       </div>
