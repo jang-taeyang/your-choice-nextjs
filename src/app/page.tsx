@@ -1,21 +1,40 @@
-import { Col, Container, Image, Row } from 'react-bootstrap';
+'use client';
 
-/** The Home page. */
-const Home = () => (
-  <main>
-    <Container id="landing-page" fluid className="py-3">
-      <Row className="align-middle text-center">
-        <Col xs={4}>
-          <Image src="next.svg" width="150px" alt="" />
-        </Col>
+import React, { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
+import TopMenu from '@/components/TopMenu';
+import FullWidthVideo from '@/components/FullWidthVideo';
+import FooterMenu from '@/components/FooterMenu';
 
-        <Col xs={8} className="d-flex flex-column justify-content-center">
-          <h1>Welcome to this template</h1>
-          <p>Now get to work and modify this app!</p>
-        </Col>
-      </Row>
-    </Container>
-  </main>
-);
+const StussyClone = () => {
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+    link.crossOrigin = 'anonymous';
+    document.head.appendChild(link);
+  }, []);
 
-export default Home;
+  return (
+    <main>
+      <TopMenu />
+      {/* Divider */}
+      <div
+        style={{
+          width: '100%',
+          height: '0.5px',
+          backgroundColor: '#ccc',
+          position: 'absolute',
+          top: '75px',
+          left: 0,
+          zIndex: 15,
+        }}
+      />
+      <FullWidthVideo />
+      <FooterMenu />
+    </main>
+  );
+};
+
+export default StussyClone;
