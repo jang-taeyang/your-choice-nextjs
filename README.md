@@ -2,7 +2,7 @@
 
 For details, please see http://ics-software-engineering.github.io/nextjs-application-template/.
 
-[Experience Your Choice (Next.js)](http://courses.ics.hawaii.edu/ics314s25/morea/nextjs-1/experience-your-choice-nextjs.html)
+[EC: Your Choice (Next.js)](http://courses.ics.hawaii.edu/ics314s25/morea/nextjs-1/experience-your-choice-nextjs.html)
 
 ## Website Reference:
 
